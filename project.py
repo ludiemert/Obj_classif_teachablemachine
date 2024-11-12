@@ -1,12 +1,17 @@
 # Importa as bibliotecas necessárias
-import numpy as np  # Biblioteca para manipulação de arrays e operações matemáticas
-import cv2  # Biblioteca para captura e manipulação de imagens e vídeo
+#import numpy as np  # Biblioteca para manipulação de arrays e operações matemáticas
+#import cv2  # Biblioteca para captura e manipulação de imagens e vídeo
 #from tensorflow.keras.models import load_model  # Função para carregar o modelo de IA treinado
-import tensorflow as tf  # Biblioteca para construção e execução de modelos de aprendizado profundo
-from keras.models import load_model
+# import tensorflow as tf  # Biblioteca para construção e execução de modelos de aprendizado profundo
+#from keras.models import load_model
 
 # Exibe a versão do TensorFlow em uso
-print(tf.__version__)
+#print(tf.__version__)
+#from keras.models import load_model
+from tensorflow.keras.models import load_model
+
+import numpy as np
+import cv2
 
 # Carrega o modelo de aprendizado profundo previamente treinado e salvo em um arquivo .h5
 model = load_model('Model/Keras_model.h5')
